@@ -2,6 +2,6 @@
   "name": "4D-library",
   "author": "TEDJACK",
   "license": "4D Systems",
-  "version": "1",
+  "version": "1.0.0",
   "description": "A simple library that drive screen"
 }
