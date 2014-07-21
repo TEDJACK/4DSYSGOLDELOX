@@ -17,7 +17,7 @@
   #include <spark_related_stuff_v1.h>
 #endif
 
-Goldelox_Serial_4DLib::Goldelox_Serial_4DLib(Stream * virtualPort) { 
+Goldelox_Serial_4DLib::Goldelox_Serial_4DLib(Stream*virtualPort) { 
         _virtualPort = virtualPort; 
 	_virtualPort->flush();
 }
