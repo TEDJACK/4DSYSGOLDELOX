@@ -6,10 +6,17 @@
 #ifndef Goldelox_Serial_4DLib_h
 #define Goldelox_Serial_4DLib_h
  
-#if (ARDUINO >= 100)
-	#include "Arduino.h" // for Arduino 1.0
-#else
-	#include "WProgram.h" // for Arduino 23
+#ifdef ARDUINO
+  #if (ARDUINO >= 100)
+   #include <Arduino.h>
+  #else
+   #include <WProgram.h>
+   #include <pins_arduino.h>
+  #endif
+#elif USE_SPARK_CORE_V02
+  #include <spark_related_stuff_v2.h>
+#elif USE_SPARK_CORE_V01
+  #include <spark_related_stuff_v1.h>
 #endif
 
 #define Err4D_OK 		0
