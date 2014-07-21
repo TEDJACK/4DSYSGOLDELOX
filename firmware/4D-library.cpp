@@ -2,7 +2,7 @@
    Goldelox_Serial_4DLib.cpp - Library for 4D Systems Serial Environment.
  */
 
-#include "Goldelox_Serial_4DLib.h"
+#include "4D-library.h"
 
 #if (ARDUINO >= 100)
 	#include "Arduino.h" // for Arduino 1.0
